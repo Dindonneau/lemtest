@@ -1,0 +1,64 @@
+.main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.main > .export-container {
+  flex: 1;
+}
+
+.card {
+  flex: 1;
+  min-width: 22rem;
+  max-width: 30rem;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid grey;
+  border-radius: 10px;
+  padding: 2rem;
+}
+
+.mongo-export-button,
+.state-export-button {
+  background-color: #4151f7;
+  color: white;
+  padding: 0.5rem 1.5rem;
+  font-size: 1.2rem;
+  align-self: center;
+  border-radius: 10px;
+}
+.card .title {
+  align-self: center;
+}
+
+li {
+  margin-top: 1rem;
+}
+.exporting-container {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.progress-container {
+  width: 10rem;
+  border: 1px solid black;
+  border-radius: 5rem;
+  height: 0.5rem;
+}
+
+.progress-container .progress-bar {
+  background-color: #af47ed;
+  height: 100%;
+  border-radius: 5rem;
+  width: 0%;
+  transition: width 0.25s ease-out;
+}
+
+.exported-date {
+  color: #af47ed;
+  font-style: italic;
+  font-size: 0.9rem;
+}

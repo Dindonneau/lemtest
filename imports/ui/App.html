@@ -1,0 +1,17 @@
+<body>
+  {{> mainContainer }}
+</body>
+
+<template name="mainContainer">
+  <div class="main">
+    <div class="exportContainer fullMongo card">
+      <h1 class="title">Full Mongo Export</h1>
+      {{> mongoExportList}}
+    </div>
+
+    <div class="exportContainer componentState card">
+      <h1 class="title">Component State Export</h1>
+      {{> stateExportList}}
+    </div>
+  </div>
+</template>

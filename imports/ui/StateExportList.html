@@ -1,0 +1,7 @@
+<template name="stateExportList">
+  <button class="state-export-button">Export</button>
+  <ul>
+    {{#each exports}} {{> export}} {{/each}} {{#each currentExports}} {{>
+    export}} {{/each}}
+  </ul>
+</template>
